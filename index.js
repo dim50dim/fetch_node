@@ -39,14 +39,14 @@ const t15 = require ('./task_15');
 // })();
 
 // Task 05
-(async () => {
-    console.log(await t05('jeramie_roh@hotmail.com'));
-})();
+// (async () => {
+//     console.log(await t05('jeramie_roh@hotmail.com'));
+// })();
 
 // Task 06
-// (async () => {
-//     console.log(await t06());
-// })();
+(async () => {
+    console.log(await t06());
+})();
 
 // Task 07
 // (async () => {

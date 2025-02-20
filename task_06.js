@@ -15,7 +15,11 @@ module.exports = async function () {
     let res = await fetch(URL + '/api/13/sr/read', {
                                                      'method': 'POST',
                                                      'headers' : {
-                                                        
+                                                        'apikey': APIKEY,
                                                      }
-    })
+    });
+    let data = await res.json();
+    let title = [];
+    title = data.result.map(item => item.title);
+    return title;
 }
