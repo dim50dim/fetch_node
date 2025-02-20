@@ -13,5 +13,16 @@ const APIKEY = require('./apikey');
 const URL = 'https://api.itgid.info';
 
 module.exports = async function (x, y) {
-
+   let res = await fetch(URL + '/api/13/random/random-number',{
+      'method' : 'POST',
+             'headers': {
+                'apikey' : APIKEY
+             },
+             'data' : {
+                'min' : x,
+                'max' : y,
+             }
+   });
+   let data = await res.json();
+   return data['random-number']
 }
