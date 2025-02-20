@@ -44,14 +44,14 @@ const t15 = require ('./task_15');
 // })();
 
 // Task 06
-(async () => {
-    console.log(await t06());
-})();
+// (async () => {
+//     console.log(await t06());
+// })();
 
 // Task 07
-// (async () => {
-//     console.log(await t07('feyan'));
-// })();
+(async () => {
+    console.log(await t07('feyan'));
+})();
 
 // Task 08
 // (async () => {
