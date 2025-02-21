@@ -13,5 +13,12 @@ const APIKEY = require('./apikey');
 const URL = 'https://api.itgid.info';
 
 module.exports = async function () {
-
+ let res = await fetch ( URL + '/api/13/gow/rune',{
+    'method': 'POST',
+    'headers' : {
+        'apikey': APIKEY,
+    }
+ });
+   let data = await res.json();
+   return data.rune;
 }
