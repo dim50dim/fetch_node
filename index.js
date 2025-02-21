@@ -65,7 +65,7 @@ const t15 = require ('./task_15');
 
 // Task 10
 (async () => {
-    console.log(await t10(2));
+    console.log(await t10(6));
 })();
 
 // Task 11
