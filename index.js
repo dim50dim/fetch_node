@@ -84,11 +84,11 @@ const t15 = require ('./task_15');
 // })();
 
 // Task 14
-(async () => {
-    console.log(await t14());
-})();
+// (async () => {
+//     console.log(await t14());
+// })();
 
 // Task 15
-// (async () => {
-//     console.log(await t15());
-// })();
+(async () => {
+    console.log(await t15());
+})();
